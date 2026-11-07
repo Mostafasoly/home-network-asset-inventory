@@ -1,0 +1,45 @@
+# Home Network Asset Inventory
+
+A hands-on security exercise: build an inventory of the devices connected to a home-business network and classify each one by how much protection it needs.
+
+## Scenario
+
+I operate a small business from home. Every device on my network is a potential entry point to sensitive information, so I needed to know which devices hold valuable data and deserve extra protection.
+
+## What I did
+
+1. Identified three devices on the network, in addition to the three reference devices already in the template.
+2. Recorded each device's **network access**, **owner**, and **location**.
+3. Added **notes** on what each device stores and how it connects.
+4. Assigned each device a **sensitivity level** based on the impact if it were compromised: what could be disclosed, altered, or destroyed.
+
+## Asset Inventory
+
+| Asset | Network access | Owner | Location | Notes | Sensitivity |
+|---|---|---|---|---|---|
+| Network router | Continuous | Internet service provider (ISP) | On-premises | Has 2.4 GHz and 5 GHz bands. All devices on the home network connect to the 5 GHz band. | Confidential |
+| Desktop | Occasional | Homeowner | On-premises | Contains private information, like photos. | Restricted |
+| Guest smartphone | Occasional | Friend | On and Off-premises | Connects to my home network. | Internal-only |
+| Personal laptop | Occasional | Homeowner | On and Off-premises | Contains private information, like my credit card information. | Restricted |
+| Work laptop | Occasional | The company | On-premises | Contains important information, like the credit card information of customers. | Restricted |
+| My smartphone | Occasional | Homeowner | On and Off-premises | Connects to my home network and contains very sensitive private information. | Restricted |
+
+The first three rows are reference devices from the template. The last three are my own additions.
+
+## Key terms
+
+- **Network access:** how often a device is connected to the network (Continuous or Occasional).
+- **Owner:** the person responsible for the device.
+- **Location:** where the device is in relation to the router (On-premises or Off-premises).
+- **Sensitivity:** how important it is to protect the device, from lowest to highest: Public, Internal-only, Confidential, Restricted.
+
+## Takeaways
+
+- Devices holding payment card data or private personal information were classified **Restricted**, the highest level.
+- A guest's device is outside my control, so even though it holds none of my data, it is still worth tracking as a network risk.
+- Always-on devices (like the router) have more exposure time than devices that connect occasionally.
+- An inventory is the first step of asset management: you can't protect what you haven't listed.
+
+## Skills demonstrated
+
+Asset management · Data classification · Confidentiality, integrity and availability (CIA) thinking · Security documentation
